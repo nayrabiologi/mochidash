@@ -1,0 +1,112 @@
+
+/* style.css */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #faf6f1;
+  color: #44363b;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.game {
+  width: min(92vw, 650px);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.logo {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.best, .score {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #a48c91;
+}
+
+.best b, .score b {
+  color: #44363b;
+  font-size: 15px;
+  margin-left: 7px;
+}
+
+.score {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.game-area {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 2px solid #dfc9c5;
+  background: #fffaf6;
+  border-radius: 12px 12px 0 0;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+}
+
+.start-screen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fffaf6e8;
+}
+
+.start-screen.hidden {
+  display: none;
+}
+
+.cat-emoji {
+  font-size: 43px;
+  margin-bottom: 8px;
+}
+
+.start-screen h2 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.start-screen p {
+  font-size: 12px;
+  color: #a48c91;
+  margin: 9px 0 18px;
+}
+
+button {
+  border: 0;
+  background: #d995a9;
+  color: white;
+  border-radius: 24px;
+  padding: 11px 23px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #c77d96;
+}
+
+.hint {
+  text-align: center;
+  color: #b2a0a0;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-top: 22px;
+}
